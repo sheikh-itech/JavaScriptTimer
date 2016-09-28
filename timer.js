@@ -18,7 +18,10 @@ function startTimer(duration, elementId) {
         document.getElementById(elementId).innerHTML = (minutes + ":" + seconds);
 
         if (timer <= 0) {
-            clearInterval(timerId);            
+            
+            clearInterval(timerId);
+            
+            return 0;
         } 
         timer-- ;
     }, 1000 );
